@@ -30,6 +30,7 @@ function App() {
   const [compResult, setCompResult] = useState("")
 
 
+
   const play=(userChoice)=>{
     setUserSelect(choice[userChoice])
     let computerChoice = randomChoice()
@@ -76,7 +77,7 @@ function App() {
     <div>
       <div className='main'>
         <Box title="You" item={userSelect} result={result}/>
-        <Box title="Computer" item={computerSelect} result={compResult}/>
+        <Box title="Computer" item={computerSelect} result={result}/>
       </div>
       <div className='main'>
         <button onClick={()=>play("scissors")}>가위</button>
