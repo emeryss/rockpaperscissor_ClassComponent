@@ -27,7 +27,6 @@ function App() {
   const [userSelect, setUserSelect] = useState(null)
   const [computerSelect, setComputerSelect] = useState(null)
   const [result, setResult] = useState("")
-  const [compResult, setCompResult] = useState("")
 
 
 
@@ -36,7 +35,7 @@ function App() {
     let computerChoice = randomChoice()
     setComputerSelect(computerChoice)
     setResult(judgement(choice[userChoice], computerChoice))
-    setCompResult(compJudgement(choice[userChoice], computerChoice))
+    // setCompResult(compJudgement(choice[userChoice], computerChoice))
   }
 
   const judgement = (user, computer) => {
